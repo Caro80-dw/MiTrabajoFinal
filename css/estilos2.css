@@ -1,0 +1,408 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: background-color 0.5s ease, color 0.5s ease;
+
+   
+}
+
+
+body.tema-claro {
+    background-color: #e2a862;
+    color: rgb(28, 18, 10);
+}
+
+.tema-claro .btn-color{
+    background-color: rgb(28, 18, 10);
+    color: #e2a862;
+}
+    
+
+
+.tema-claro .seccion2, .seccion3, .seccion4{
+     background-color: #e2a862;
+     
+}
+
+.tema-claro .div-section1, .div-seccion2, .div-seccion3, .div-seccion4{
+      background-color: #e2a862;
+          
+
+}
+body.tema-oscuro {
+    background-color: rgb(28, 18, 10);
+    color: #e2a862;
+}
+
+.tema-oscuro .principal {
+    background-color: rgb(28, 18, 10);
+    color: #e2a862;
+}
+
+.tema-oscuro .login-container h2 {
+     background-color: rgb(28, 18, 10);
+     color: #e2a862;
+}
+
+    
+.tema-oscuro .quitar li a {
+   background-color: rgb(28, 18, 10);
+   color: #e2a862;
+}
+
+.tema-oscuro .btn-color {
+     background-color: #e2a862;
+
+}
+
+
+.tema-oscuro .div-seccion1, 
+.tema-oscuro .div-seccion2,
+.tema-oscuro .div-seccion3,
+.tema-oscuro .div-seccion4{
+      background-color: rgb(28, 18, 10);
+     
+
+}
+
+.tema-oscuro .footer-final {
+    background-color: rgb(28, 18, 10);
+    color: #e2a862;
+}
+
+
+.tema-oscuro .section1, 
+.tema-oscuro .seccion2, 
+.tema-oscuro .seccion3, 
+.tema-oscuro .seccion4 {
+   background-color: rgb(28, 18, 10);
+   color: #e2a862; 
+}
+
+
+.principal {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 1rem;
+    background-color: #e2a862;
+    text-align: center;
+}
+
+.principal h1 {
+    font-size: 1.8rem;
+    font-family: "Playfair Display", serif;
+    margin: 0.5rem 0;
+}
+
+.logo {
+    width: 50%;
+    max-width: 200px; 
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.login-container {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.login-container h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.login-container button{
+    border-radius: 10px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0.5rem;
+}
+
+.registro-usuario input, .registro-contraseña input {
+    width: 90%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+
+.btn-color {
+    width: 50px;
+    border-radius: 10em;
+    border: none;
+    background-color: #e2a862;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+.btn-color i .bi{
+    width: auto;
+}
+.menu {
+    display: none; 
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#boton-menu {
+    display: block; /* Mostramos el botón de menú en móvil */
+    width: 50%;
+    padding: 0.8rem;
+    background-color: #ddd;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.quitar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+   /* flex-direction: column;*/
+    gap: 1rem;
+    background-color: #e2a862;
+}
+
+.quitar li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.quitar li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+header{
+    background-color: whitesmoke;
+}
+main {
+    padding: 1.5rem 1rem;
+    background-color:whitesmoke;
+
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+
+}
+
+
+section h2, section h3 {
+    text-decoration: underline;
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1rem;
+    font-family: cursive;
+    margin-bottom: 1rem;
+}
+
+
+
+.formulario {
+    border-color: #e2a862;;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 8px ;
+    padding: 1em;
+    margin: 2em auto;
+    max-width: 700px;
+}
+
+.form-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.fila {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.fila input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.boton {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    border-color: #e2a862;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #e2a862;
+}
+
+.seccion2, 
+.seccion3, 
+.seccion4 {
+    background-color: #e2a862;
+    color: black;
+}
+
+.div-seccion2, .div-seccion3, .div-seccion4 {
+    padding: 0.5;
+    background-color: #e2a862;
+
+}
+
+.carousel-inner img {
+    border-radius: 8px;
+}
+
+
+
+.footer-final {
+    background-color:#e2a862;;
+    text-align: center;
+    padding: 1.5rem;
+    
+}
+
+
+#boton-inicio {
+  border: none;
+  background-color: #fff; 
+  color: black; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-size: 16px;
+  margin-right: 20px;
+  transition: background-color 0.3s ease;
+  
+}
+
+
+#boton-inicio:hover {
+  background-color: #fff; 
+  
+}
+
+
+#boton-inicio:active {
+  background-color: #e2a862; 
+  transform: translateY(1px);
+  
+}
+
+
+
+@media (min-width: 768px) {
+    .principal {
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .principal h1 {
+        font-size: 2.5rem;
+    }
+
+    .logo {
+        width: 15%;
+        margin-bottom: 0;
+    }
+
+    .login-container {
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+    }
+    
+    .login-container h2 {
+        display: none; 
+    }
+
+    #boton-menu {
+        display: none; 
+    }
+
+    .menu {
+        display: block; 
+        width: auto;
+        margin-top: 0;
+    }
+
+    .quitar {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .quitar li a {
+        padding: 0.5rem;
+    }
+
+    .form-columns {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .fila {
+        width: 48%; 
+    }
+    
+    .div-seccion2, .div-seccion3, .div-seccion4 {
+        margin: 0 auto;
+        max-width: 800px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .principal {
+        padding: 1.5rem 3rem;
+    }
+
+    main {
+        padding: 2rem 3rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .div-seccion2, .div-seccion3, .div-seccion4 {
+        max-width: 1000px;
+    }
+}
