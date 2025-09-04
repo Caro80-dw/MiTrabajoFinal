@@ -1,4 +1,4 @@
-const cambiarF=document.getElementById('cambiarF');
+const cambiarF=document.getElementById ('cambiarF');
 const body=document.body;
 
 
