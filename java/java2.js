@@ -1,4 +1,4 @@
-const cambiarF=document.getElementById ('cambiarF');
+const cambiarF=document.getElementById('cambiarF');
 const body=document.body;
 
 
@@ -19,15 +19,12 @@ if (body.classList.contains('tema-claro')){
 }});
 
 
+let boton=document.getElementById('boton-menu');
+let menu=document.getElementById('menu');
 
+boton.addEventListener('click',function(){
+menu.classList.toggle('menu');
+menu.classList.toggle('quitar');
 
-
-
-
-
-
-
-
-
-
+});
 

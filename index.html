@@ -21,12 +21,16 @@
 <body>
     
     <header class="principal" id="inicio">
-        <img src="img/logo-empresa.png" alt="logo-empresa" class="logo">
-        
+        <img src="img/logo-empresa.png" alt="logo-empresa" class="logo" style="border-radius: 50%;">
+
+        <div class="caja-superior">
         <h1>C&L Calzados</h1>
         
         <button id="cambiarF" class="btn-color mt-3 p-3" aria-label="cambiar a modo oscuro"><i class="bi bi-moon-stars-fill "></i></button>
 
+        <div class="menu-contendor">
+
+        <button id="boton-menu"> MENU </button>
 
         <nav id="menu" class="menu"></nav>
             <ul class="quitar">
@@ -38,12 +42,14 @@
                 <li><a href="tel:+54247753324"><strong>WhatsApp</strong></a></li>
             </ul>
         </nav>
+        </div>
+        </div>
         
         <div class="login-container">
             <h2>Clientes</h2>
             <form>
                 <div class="registro-usuario">
-                    <label for="username">Usuario:</label>
+                    <label for="username"><img src="img/usuario.jpg" style="width: 40px; border-radius: 50%;">Usuario:</label>
                     <input type="text" id="username" name="username" placeholder="Ingrese su usuario" required>
                 </div>
                 <div class="registro-contraseña">
@@ -51,7 +57,6 @@
                     <input type="password" id="passwordUsuario" name="passwordUsuario" placeholder="Ingrese su contraseña" required>
                 </div><br><br>
                 <button id="btn-exito">Iniciar Sesión</button>
-                <button ></button>
             </form>
         </div>
     </header>
@@ -109,6 +114,7 @@
             <header>
                 <div class="div-seccion2">
                     <h3>Damas</h3>
+                    <p>En nuestra sección de damas, encontrarás una amplia variedad de calzado elegante y cómodo. Desde tacones sofisticados hasta botas versátiles, tenemos opciones para cada estilo y ocasión.</p>
                     <div id="carouselDamas" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -146,6 +152,7 @@
             <header>
                 <div class="div-seccion3">
                     <h3>Hombres</h3>
+                    <p>En nuestra sección de hombres, ofrecemos una selección de calzado masculino que combina comodidad y estilo. Desde zapatillas deportivas hasta zapatos formales, tenemos opciones para cada ocasión.</p>
                     <div id="carouselhombres" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -182,6 +189,7 @@
             <header>
                 <div class="div-seccion4">
                     <h3>Niños</h3>
+                    <p>No nos olvidamos de los más pequeños. Nuestra sección de niños ofrece calzado divertido y resistente, perfecto para acompañar sus aventuras diarias.</p>
                     <div id="carouselNiños" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -215,13 +223,24 @@
         </section>
     </main>
     
-    <footer class="footer-final"> 
-    <a href="#inicio">
-        <button type="button" id="boton-inicio">Inicio</button>
+     <footer class="footer-final"> 
+
+
+        <div class="wave" style="height: 200px; overflow: hidden;" >
+                    <a href="#inicio">
+                        <img src="img/home.jpg" style="width: 40px; border-radius: 50%;" alt="icono de inicio">
     </a>
     <p>Todos los derechos reservados@2025</p> 
+    <p>Desarrollado por camilososa363@gmail.com</p>
+    <a href="mailto:camilososa363@gmail.com"> <img src="img/gmail.png" alt="" style="width: 60px;height: 60px;"></a>
+    <a href="tel:+54247753324"> <img src="img/whatsApp.png" alt="" style="width: 60px;height: 60px;"></a>
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #e2a862;"></path></svg>
+    </div>
+    
 </footer>
     
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="java/java2.js"></script>
     <script src="java/izi2.js"></script>

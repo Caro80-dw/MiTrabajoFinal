@@ -26,7 +26,6 @@ body.tema-claro {
 }
     
 
-
 .tema-claro .seccion2, .seccion3, .seccion4{
      background-color: #e2a862;
      
@@ -41,10 +40,20 @@ body.tema-oscuro {
     background-color: rgb(28, 18, 10);
     color: #e2a862;
 }
+.tema-oscuro .caja-superior {
+    background-color: rgb(28, 18, 10);
+    color: #e2a862;
+}
 
 .tema-oscuro .principal {
     background-color: rgb(28, 18, 10);
     color: #e2a862;
+}
+
+
+.tema-oscuro .logo {
+    filter: invert(1);
+    color: black;
 }
 
 .tema-oscuro .login-container h2 {
@@ -150,11 +159,16 @@ body.tema-oscuro {
     right: 1rem;
     cursor: pointer;
 }
-.btn-color i .bi{
+.btn-color i .bi {
     width: auto;
 }
-.menu {
-    display: none; 
+
+.menu-contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
     width: 100%;
     margin-top: 1rem;
 }
@@ -198,6 +212,11 @@ body.tema-oscuro {
 
 header{
     background-color: whitesmoke;
+    color: black;
+    background: black;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #e2a862, #659999);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #e2a862, #659999); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 main {
     padding: 1.5rem 1rem;
@@ -210,17 +229,33 @@ section {
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 8px;
+    background-color: #f5f5f5;
   
 
 }
 
+section h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    background: #659999;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #e2a862, #659999);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top,#e2a862, #659999); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-section h2, section h3 {
+}
+section h2{
+    border-radius: 8px;
     text-decoration: underline;
     font-family: "Playfair Display", serif;
+    color: black;
     font-size: 1.5rem;
     margin-bottom: 1rem;
     font-weight: bold;
+    background: #659999;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #e2a862, #659999);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #e2a862, #659999); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 p {
@@ -228,6 +263,7 @@ p {
     font-size: 1rem;
     font-family: cursive;
     margin-bottom: 1rem;
+    background-color: aliceblue;
 }
 
 
@@ -288,15 +324,25 @@ p {
 
 .carousel-inner img {
     border-radius: 8px;
+    max-height: 300px;
+    object-fit: scale-down;
 }
 
 
 
 .footer-final {
-    background-color:#e2a862;;
+    background-color:whitesmoke;
     text-align: center;
     padding: 1.5rem;
     
+}
+
+.wave {
+    border-radius: 8px;
+     background: #659999;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #e2a862, #659999);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #e2a862, #659999); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 
@@ -325,8 +371,65 @@ p {
   transform: translateY(1px);
   
 }
+@media screen and(max-width:578px){
+.logo{
+        width: 70%;
+    }
+.login-container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+
+.menu-contenedor{
+    width: 100%;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.menu-contenedor a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-contenedor:hover .menu-contenedor {
+    display: block;
+}
+
+ nav ul {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: none; 
+  position: relative; 
+}
+
+.quitar {
+  display: flex; 
+  flex-direction: column;
+  position: absolute; 
+  background-color: #f9f9f9;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+nav ul li:hover .quitar {
+  display: block; 
+}
+
+.quitar li {
+  display: block; 
+}
 
 
+}
 
 @media (min-width: 768px) {
     .principal {
@@ -410,3 +513,4 @@ p {
         max-width: 1000px;
     }
 }
+
