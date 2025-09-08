@@ -1,4 +1,4 @@
-const btnExito=document.getElementById('btn-exito');
+  const btnExito=document.getElementById('btn-exito');
 
 btnExito.addEventListener('click', function(event) {
     event.preventDefault(); 
