@@ -18,13 +18,14 @@ if (body.classList.contains('tema-claro')){
     cambiarF.innerHTM='<i class="bi bi-moon-stars-fill"></i>'
 }});
 
+const nav = document.querySelector("#nav");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
 
-let boton=document.getElementById('boton-menu');
-let menu=document.getElementById('menu');
+abrir.addEventListener("click", () => {
+    nav.classList.add("visible");
+})
 
-boton.addEventListener('click',function(){
-menu.classList.toggle('menu');
-menu.classList.toggle('quitar');
-
-});
-
+cerrar.addEventListener("click", () => {
+    nav.classList.remove("visible");
+})

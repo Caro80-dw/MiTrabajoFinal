@@ -23,38 +23,36 @@
     <header class="principal" id="inicio">
         <img src="img/logo-empresa.png" alt="logo-empresa" class="logo" style="border-radius: 50%;">
 
-        <div class="caja-superior">
+        
         <h1>C&L Calzados</h1>
         
         <button id="cambiarF" class="btn-color mt-3 p-3" aria-label="cambiar a modo oscuro"><i class="bi bi-moon-stars-fill "></i></button>
 
-        <div class="menu-contendor">
-
-        <button id="boton-menu"> MENU </button>
-
-        <nav id="menu" class="menu"></nav>
-            <ul class="quitar">
-                <li><a href="#nosotros">Nosotros</a></li>
+     <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                 <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#damas">Damas</a></li>
                 <li><a href="#hombres">Hombres</a></li>
                 <li><a href="#niños">Niños</a></li>
                 <li><a href="mailto:camilososa363@gmail.com"><strong>mail</strong></a></li>
                 <li><a href="tel:+54247753324"><strong>WhatsApp</strong></a></li>
+           
             </ul>
         </nav>
-        </div>
-        </div>
+        
         
         <div class="login-container">
             <h2>Clientes</h2>
             <form>
                 <div class="registro-usuario">
                     <label for="username"><img src="img/usuario.jpg" style="width: 40px; border-radius: 50%;">Usuario:</label>
-                    <input type="text" id="username" name="username" placeholder="Ingrese su usuario" required>
+                    <input type="text" id="username" name="username" placeholder="usuario" required>
                 </div>
                 <div class="registro-contraseña">
                     <label for="passwordUsuario">Contraseña:</label>
-                    <input type="password" id="passwordUsuario" name="passwordUsuario" placeholder="Ingrese su contraseña" required>
+                    <input type="password" id="passwordUsuario" name="passwordUsuario" placeholder="contraseña" required>
                 </div><br><br>
                 <button id="btn-exito">Iniciar Sesión</button>
             </form>

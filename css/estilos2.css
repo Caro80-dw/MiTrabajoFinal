@@ -96,6 +96,14 @@ body.tema-oscuro {
    color: #e2a862; 
 }
 
+header{
+    background-color: whitesmoke;
+    color: black;
+    background: black;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #e2a862, #659999);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #e2a862, #659999); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
 
 .principal {
     display: flex;
@@ -163,61 +171,24 @@ body.tema-oscuro {
     width: auto;
 }
 
-.menu-contenedor {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
-    width: 100%;
-    margin-top: 1rem;
-}
 
-#boton-menu {
-    display: block; /* Mostramos el botón de menú en móvil */
-    width: 50%;
-    padding: 0.8rem;
-    background-color: #ddd;
-    color: black;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin: 0 auto;
-}
-
-.quitar {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.nav-list {
+    list-style-type: none;
     display: flex;
-   /* flex-direction: column;*/
     gap: 1rem;
-    background-color: #e2a862;
 }
 
-.quitar li a {
-    display: block;
-    padding: 0.5rem 1rem;
+.nav-list li a {
     text-decoration: none;
-    color: black;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    color: #1c1c1c;
 }
 
-.quitar li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+.abrir-menu,
+.cerrar-menu {
+    display: none;
 }
 
 
-header{
-    background-color: whitesmoke;
-    color: black;
-    background: black;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #e2a862, #659999);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #e2a862, #659999); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
 main {
     padding: 1.5rem 1rem;
     background-color:whitesmoke;
@@ -371,65 +342,57 @@ background: linear-gradient(to top, #e2a862, #659999); /* W3C, IE 10+/ Edge, Fir
   transform: translateY(1px);
   
 }
-@media screen and(max-width:578px){
-.logo{
-        width: 70%;
+
+
+@media screen and (max-width: 767px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
     }
-.login-container{
-        width: 90%;
-        margin: 0 auto;
+
+    .abrir-menu {
+        color: #1c1c1c;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
     }
     
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
 
-.menu-contenedor{
-    width: 100%;
-    display: none;
-    position: absolute;
-    z-index: 1;
+    .nav-list li a {
+        color: #ecececec;
+    }
 }
 
-.menu-contenedor a{
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.menu-contenedor:hover .menu-contenedor {
-    display: block;
-}
-
- nav ul {
-  list-style: none; 
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  display: none; 
-  position: relative; 
-}
-
-.quitar {
-  display: flex; 
-  flex-direction: column;
-  position: absolute; 
-  background-color: #f9f9f9;
-  max-width: 55opx;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-
-}
-
-nav ul li:hover .quitar {
-  display: block; 
-}
-
-.quitar li {
-  display: block; 
-}
-
-
-}
 
 @media (min-width: 768px) {
     .principal {
@@ -439,7 +402,7 @@ nav ul li:hover .quitar {
     }
 
     .principal h1 {
-        font-size: 2.5rem;
+        display: none;
     }
 
     .logo {
