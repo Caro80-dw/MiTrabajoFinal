@@ -40,6 +40,7 @@ body.tema-oscuro {
     background-color: rgb(28, 18, 10);
     color: #e2a862;
 }
+
 .tema-oscuro .caja-superior {
     background-color: rgb(28, 18, 10);
     color: #e2a862;
@@ -53,7 +54,7 @@ body.tema-oscuro {
 
 .tema-oscuro .logo {
     filter: invert(1);
-    color: black;
+    color: rgb(28, 18, 10);
 }
 
 .tema-oscuro .login-container h2 {

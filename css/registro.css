@@ -1,0 +1,48 @@
+*
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5bf8f;
+    margin: 0;
+    padding: 0;
+}
+
+.registrate h1 {
+    text-align: center;
+    color: #1c120a;
+    align-items: center;
+}
+
+.registrate p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.formulario {
+    border-color: #e2a862;;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 8px ;
+    padding: 1em;
+    margin: 2em auto;
+    max-width: 700px;
+    background-color: whitesmoke;
+}
+
+.form-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.fila {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.fila input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
